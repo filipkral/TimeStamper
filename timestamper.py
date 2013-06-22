@@ -46,7 +46,7 @@ class App():
             self.buttons[i].config(text=time.strftime(self.formats[i], self.currentTime))
         self.root.after(1000, self.updateMe)
     
-    def copyToClipboard(self, tcopy):
+    def copyToClipboard(self, tocopy):
         """Take the prefix, join it with the text of the button that was clicked and copy it to clip board."""
         aprefix = ""
         try: aprefix =  self.prefix.get()
